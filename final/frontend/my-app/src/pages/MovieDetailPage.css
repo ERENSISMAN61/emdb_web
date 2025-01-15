@@ -1,0 +1,294 @@
+.movie-detail {
+  min-height: calc(100vh - 72px);
+  background-color: #1a0f1a;
+  padding: 1rem;
+}
+
+.movie-info {
+  max-width: 800px;
+  max-height: 550px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  color: white;
+  background: rgba(42, 31, 42, 0.8);
+  border-radius: 12px;
+  display: flex;
+  gap: 2rem;
+  height: fit-content;
+}
+
+.movie-info .movie-poster {
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.movie-info .movie-poster img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.movie-content {
+  flex: 1;
+}
+
+.movie-content h1 {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+  color: white;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.overview {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.genres {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.genre {
+  background-color: rgba(156, 39, 176, 0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.credits {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.credit-item h3 {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.credit-item p {
+  font-size: 1rem;
+  color: white;
+}
+
+.movie-reviews {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.movie-reviews h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.review-form {
+  background: #2a1f2a;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.rating-input {
+  margin-bottom: 1.5rem;
+}
+
+.rating-input label {
+  display: block;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.rating-input input {
+  padding: 0.5rem;
+  border: 1px solid #3a2f3a;
+  border-radius: 4px;
+  background: #1a0f1a;
+  color: white;
+  width: 100px;
+}
+
+.review-input {
+  margin-bottom: 1.5rem;
+}
+
+.review-input label {
+  display: block;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.review-input textarea {
+  width: 100%;
+  height: 150px;
+  padding: 1rem;
+  border: 1px solid #3a2f3a;
+  border-radius: 4px;
+  background: #1a0f1a;
+  color: white;
+  resize: vertical;
+}
+
+.submit-review {
+  background: #9c27b0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-review:hover {
+  background: #7b1fa2;
+}
+
+.login-prompt {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  background: #2a1f2a;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.login-prompt a {
+  color: #9c27b0;
+  text-decoration: none;
+}
+
+.login-prompt a:hover {
+  text-decoration: underline;
+}
+
+.reviews-list {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.review-item {
+  background: #2a1f2a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.review-author {
+  font-weight: bold;
+}
+
+.review-rating {
+  color: #ffc107;
+}
+
+.review-content {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.5;
+}
+
+.no-reviews {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+}
+
+.similar-movies {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.similar-movies h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 72px);
+  color: white;
+  font-size: 1.2rem;
+}
+
+.error-message {
+  color: #f44336;
+  margin-bottom: 1rem;
+}
+
+.movie-backdrop {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(26, 15, 26, 0.8), #1a0f1a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .movie-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .movie-meta {
+    justify-content: center;
+  }
+
+  .genres {
+    justify-content: center;
+  }
+
+  .credits {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+} 

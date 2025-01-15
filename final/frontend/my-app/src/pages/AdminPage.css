@@ -1,0 +1,291 @@
+.admin-page {
+  min-height: calc(100vh - 72px);
+  background-color: #1a0f1a;
+  color: white;
+  padding: 2rem;
+}
+
+.admin-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(156, 39, 176, 0.3);
+}
+
+.admin-header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.admin-header p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.admin-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-section {
+  background: #2a1f2a;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.admin-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-item {
+  background: #2a1f2a;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.review-user {
+  font-weight: bold;
+  color: #9c27b0;
+}
+
+.review-rating {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.review-content {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.review-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.delete-button {
+  background: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+  background: #cc0000;
+}
+
+.no-results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.error-message {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.content-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.content-form input,
+.content-form textarea,
+.content-form select {
+  padding: 0.8rem;
+  border: 1px solid rgba(156, 39, 176, 0.3);
+  border-radius: 8px;
+  background: #2a1f2a;
+  color: white;
+  font-size: 1rem;
+}
+
+.content-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.content-form input:focus,
+.content-form textarea:focus,
+.content-form select:focus {
+  outline: none;
+  border-color: #9c27b0;
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+.submit-button {
+  background: #9c27b0;
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background: #7b1fa2;
+}
+
+.no-reviews {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 2rem;
+}
+
+.content-list {
+  margin-top: 2rem;
+}
+
+.content-section {
+  margin-bottom: 2rem;
+}
+
+.content-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #9c27b0;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.content-item {
+  width: 100%;
+  max-width: 200px;
+  background: #3a2f3a;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.content-item:hover {
+  transform: translateY(-5px);
+}
+
+.content-poster {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.content-info {
+  padding: 1rem;
+}
+
+.content-info h4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content-item .delete-button {
+  width: 100%;
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 0.5rem;
+}
+
+.content-item .delete-button:hover {
+  background-color: #cc0000;
+}
+
+.content-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+.slider-button {
+  background: rgba(156, 39, 176, 0.8);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: background-color 0.2s;
+  z-index: 2;
+}
+
+.slider-button:hover {
+  background: #9c27b0;
+}
+
+.slider-button:disabled {
+  background: rgba(156, 39, 176, 0.3);
+  cursor: not-allowed;
+}
+
+.view-reviews-button {
+  background: #9c27b0;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.view-reviews-button:hover {
+  background: #7b1fa2;
+} 

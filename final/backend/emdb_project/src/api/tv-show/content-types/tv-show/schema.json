@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tv_shows",
+  "info": {
+    "singularName": "tv-show",
+    "pluralName": "tv-shows",
+    "displayName": "TV Show",
+    "description": "Dizi içerikleri"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "text"
+    },
+    "first_air_date": {
+      "type": "date"
+    },
+    "poster_path": {
+      "type": "string"
+    },
+    "backdrop_path": {
+      "type": "string"
+    },
+    "tmdb_id": {
+      "type": "integer",
+      "unique": true
+    },
+    "vote_average": {
+      "type": "decimal"
+    },
+    "vote_count": {
+      "type": "integer"
+    },
+    "popularity": {
+      "type": "decimal"
+    },
+    "number_of_seasons": {
+      "type": "integer"
+    },
+    "number_of_episodes": {
+      "type": "integer"
+    }
+  }
+} 

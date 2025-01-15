@@ -1,0 +1,52 @@
+.content-page {
+  min-height: calc(100vh - 72px);
+  background-color: #1a0f1a;
+  padding-bottom: 2rem;
+}
+
+.content-header {
+  background: linear-gradient(to bottom, #2a1f2a, #1a0f1a);
+  padding: 3rem 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.content-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.content-header p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sort-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(156, 39, 176, 0.2);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: rgba(156, 39, 176, 0.4);
+}
+
+.sort-button.active {
+  background-color: #9c27b0;
+} 

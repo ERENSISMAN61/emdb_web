@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "movies",
+  "info": {
+    "singularName": "movie",
+    "pluralName": "movies",
+    "displayName": "Movie"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "overview": {
+      "type": "text"
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "poster_path": {
+      "type": "string"
+    },
+    "tmdb_id": {
+      "type": "integer",
+      "unique": true
+    },
+    "vote_average": {
+      "type": "decimal"
+    },
+    "vote_count": {
+      "type": "integer"
+    },
+    "popularity": {
+      "type": "decimal"
+    }
+  }
+}
